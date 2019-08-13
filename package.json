@@ -1,0 +1,42 @@
+{
+  "name": "sql-backup-convertor",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "start": "TZ=UTC ts-node src/main.ts",
+    "start:dev": "TZ=UTC nodemon",
+    "start:debug": "TZ=UTC nodemon --config nodemon-debug.json",
+    "start:prod": "TZ=UTC node lib/main.js",
+    "lint": "TZ=UTC tslint -p tsconfig.json -c tslint.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ComBarnea/sql-backup-convertor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ComBarnea/sql-backup-convertor/issues"
+  },
+  "homepage": "https://github.com/ComBarnea/sql-backup-convertor#readme",
+  "devDependencies": {
+    "@types/fs-extra": "^8.0.0",
+    "@types/node": "^12.7.1",
+    "nodemon": "^1.19.1",
+    "prettier": "^1.18.2",
+    "ts-loader": "^6.0.4",
+    "tsconfig-paths": "^3.8.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "klaw": "^3.0.0",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "through2": "^3.0.1",
+    "yargs": "^13.3.0"
+  }
+}
