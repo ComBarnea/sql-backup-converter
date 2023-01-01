@@ -27,8 +27,8 @@
     "@types/node": "^12.7.1",
     "nodemon": "^1.19.1",
     "prettier": "^1.18.2",
-    "ts-loader": "^6.0.4",
-    "tsconfig-paths": "^3.8.0",
+    "ts-loader": "^9.4.2",
+    "tsconfig-paths": "^3.10.1",
     "typescript": "^3.5.3"
   },
   "dependencies": {
